@@ -13,7 +13,11 @@ function App() {
   return (
     <>
       <Flex direction="column" gap="2">
-        <Heading>Welcome to my Radix app</Heading>
+        <Heading size={{
+            initial: "3",
+            md: "5",
+            xl: "7",
+          }}>Welcome to my Radix app</Heading>
         <Text>Hello from Radix Themes:</Text>
         <Button>Let's go</Button>
         <Grid columns="3" gap="3" rows="repeat(2, 64px)" width="auto">

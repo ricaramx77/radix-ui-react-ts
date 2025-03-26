@@ -2,6 +2,7 @@ import { Box, Button, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import AlertComponent from "./Alert";
 import "./App.css";
 import SelectComponent from "./Select";
+import TableComponent from "./Table";
 
 function App() {
   return (
@@ -19,8 +20,11 @@ function App() {
           </Box>
         </Grid>
         <AlertComponent />
+        <br></br>
         <Text>Select an element: </Text>
-        <SelectComponent/>
+        <SelectComponent />
+        <Text>Data table </Text>
+        <TableComponent />
       </Flex>
     </>
   );

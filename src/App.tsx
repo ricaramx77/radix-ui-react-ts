@@ -1,13 +1,14 @@
 import { Box, Button, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import AlertComponent from "./Alert";
 import "./App.css";
+import SelectComponent from "./Select";
 
 function App() {
   return (
     <>
       <Flex direction="column" gap="2">
         <Heading>Welcome to my Radix app</Heading>
-        <Text>Hello from Radix Themes :)</Text>
+        <Text>Hello from Radix Themes:</Text>
         <Button>Let's go</Button>
         <Grid columns="3" gap="3" rows="repeat(2, 64px)" width="auto">
           <Box width="100%" height="64px">
@@ -18,6 +19,8 @@ function App() {
           </Box>
         </Grid>
         <AlertComponent />
+        <Text>Select an element: </Text>
+        <SelectComponent/>
       </Flex>
     </>
   );

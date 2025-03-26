@@ -1,6 +1,11 @@
 import { Box, Button, Flex, Grid, Heading, Text } from "@radix-ui/themes";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./About";
 import AlertComponent from "./Alert";
 import "./App.css";
+import Contact from "./Contact";
+import MyDropdownMenu from "./DropDownMenu";
+import Home from "./Home";
 import SelectComponent from "./Select";
 import TableComponent from "./Table";
 
@@ -26,6 +31,15 @@ function App() {
         <Text>Data table </Text>
         <TableComponent />
       </Flex>
+      <BrowserRouter>
+      <MyDropdownMenu />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+
     </>
   );
 }
